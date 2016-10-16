@@ -1,27 +1,32 @@
-//function Robot(type) {   //-->Constructor function
-//    this.type = type;
-//}
-//
-//var flyRobot = new Robot('fly');
-//var diveRobot = new Robot('dive');
-//
-//console.log(flyRobot.type);
-//
-//Robot.prototype.speak = function (text) {
-//    console.log(this.type + "Robot says '" + text + "'");
-//};
-//
-//flyRobot.speak('Hello World');
-//
-//flyRobot.talk = function (str) {
-//    console.log('flyRobot is talking ...'+str);
-//}
-//
-//flyRobot.speak = function (){
-//    //
-//}
-//flyRobot.speak();
-////diveRobot.speak("diveRobot");
+function Robot(type) {   //-->Constructor function
+   this.type = type;
+}
+
+var flyRobot = new Robot('fly');
+var diveRobot = new Robot('dive');
+
+console.log(flyRobot.type);
+
+Robot.prototype.speak = function (text) {
+   console.log(this.type + "Robot says '" + text + "'");
+};
+
+flyRobot.speak('Hello World');
+
+flyRobot.talk = function (str) {
+   console.log('flyRobot is talking ...'+str);
+}
+
+flyRobot.speak = function (){
+   //
+}
+flyRobot.speak();
+//diveRobot.speak("diveRobot");
+// flyRobot.talk = function() {
+//     console.log('I am talking');
+// };
+
+flyRobot.talk("I am talking talking");
 
 //cach khai bao object thuong su dung
 var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
@@ -99,7 +104,10 @@ console.log(x3, x4, x5, x6, x7);
 var date = new Date('2015-03-25');
 console.log(date, x8);
 /*
-* { firstName: 'John', lastName: 'Doe', age: 50, gender: 'male' }
+* fly
+ flyRobot says 'Hello World'
+ flyRobot is talking ...I am talking talking
+ { firstName: 'John', lastName: 'Doe', age: 50, gender: 'male' }
  name:  Person { firstName: 'John', lastName: 'Doe', age: 50, eyeColor: 'blue' }
  name:  Person {
  firstName: 'Sally',
@@ -123,5 +131,5 @@ console.log(date, x8);
  [String: 'Hello World']
  Hello World
  [Number: 0] [Boolean: false] [] /(?:)/ [Function: anonymous]
- 2015-03-25T00:00:00.000Z 2016-10-16T06:12:28.059Z
+ 2015-03-25T00:00:00.000Z 2016-10-16T07:52:41.444Z
 * */
