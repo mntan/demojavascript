@@ -1,7 +1,7 @@
 /*
 * refer more: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 * */
-require ("./stringMethodExtend.js");
+var S = require ("./stringMethodExtend.js");
 var str = "This is the test Text in javascript , using javascript methods";
 
 //indexOf method
@@ -48,3 +48,32 @@ console.log("split method : "+ "hallo".split(""));
 
 console.log("test camel function ".camelUpperCase());
 console.log("test with reserve str:", str.reserve());
+console.log(S.statisticWord("This is Tan, he is an engineer software. He love programming."));
+
+/*
+* 25
+ 44
+ 25
+ javascript
+ javascript , using javascript methods
+ Slice Method : javascript
+ Substring method : javascript
+ Substr method : javascript
+ replace method : This is the test Text in node.js , using node.js methods
+ upperCase and lowerCase method : THIS IS THE TEST TEXT IN JAVASCRIPT , USING JAVASCRIPT METHODS -- this is the test text in javascript , using javascript methods
+ Concat method : This is the test Text in javascript , using javascript methods **Add new string to**this is second string (optional)
+ CharAt and CharCodeAt : j -- 106
+ split method : h,a,l,l,o
+ Test Camel Function
+ test with reserve str: sdohtem tpircsavaj gnisu , tpircsavaj ni txeT tset eht si sihT
+ [ { word: 'is', time: 2 },
+ { word: 'This', time: 1 },
+ { word: 'Tan', time: 1 },
+ { word: 'he', time: 1 },
+ { word: 'an', time: 1 },
+ { word: 'engineer', time: 1 },
+ { word: 'software', time: 1 },
+ { word: 'He', time: 1 },
+ { word: 'love', time: 1 },
+ { word: 'programming', time: 1 } ]
+ * */
