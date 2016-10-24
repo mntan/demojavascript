@@ -19,6 +19,7 @@ flyRobot.talk = function (str) {
 
 flyRobot.speak = function (){
    //
+    console.log("speak empty");
 }
 flyRobot.speak();
 //diveRobot.speak("diveRobot");
